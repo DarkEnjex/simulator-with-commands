@@ -3,32 +3,53 @@
 }
 
 body {
+    /* background-color: #fff; */
     font-family: sans-serif;
-    background-color: #f9f9fd;
 }
 
-.menu {
-    padding: 10px;
-    margin: 0;
-    list-style: none;
-    border-radius: 4px;
-    background-color: #2196f3;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+.text {
+    color: #2a2a2a;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
 
-    /*  Making ul.menu a Flex container  */
+.container {
     display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 1170px;
+    min-width: 320px;
+    margin: 0 auto;
 }
 
-.menu .link {
-    display: block;
-    padding: 10px;
-    border-radius: 4px;
-    text-decoration: none;
-    color: black;
-    background-color: #fff;
+.element {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: #ea0000;
 }
 
-.menu .link:hover {
-    text-decoration: underline;
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .element {
+        flex-basis: calc((100% - 10) / 2);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        gap: 15px;
+    }
+
+    .element {
+        flex-basis: calc((100% - 30px) / 3);
+    }
+
 }
