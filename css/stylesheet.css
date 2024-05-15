@@ -28,7 +28,13 @@ body {
     border-radius: 10px;
     text-align: center;
     font-size: 24px;
-    color: #ea0000;
+    color: #e6f6f7;
+    background-color: rgb(47, 50, 53);
+}
+
+.element:hover,
+.element:focus {
+    background-color: rgb(68, 82, 96);
 }
 
 @media (min-width: 768px) {
